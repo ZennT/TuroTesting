@@ -10,8 +10,10 @@ public class Base {
 //        PageFactory.initElements(MyDriver.get(), this);
 //    }
     public Base() {
+
         PageFactory.initElements(MyDriver.get(), this);
     }
+
     public static void waitSomeTime(Long milliSeconds){
         try {
             Thread.sleep(milliSeconds);
@@ -21,8 +23,8 @@ public class Base {
     }
 
     // try catch kullanmak throw atmaktan daha iyi dir. Herhangi bir hatada
-    // catch ten sonraki islemleri de yappar. Ama Throws ex da islemi durdurur.
-    // Throws kullaniminda reusable methodlari implimenent eden her method/class
+    // catch ten sonraki islemleri de yapar. Ama Throws ex da islemi durdurur.
+    // Throws kullaniminda reusable methodlari implement eden her method/class
     // da throws etmeniz gerekir.
 
 
